@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="File/favicon2.png" />
+  <title>Offerta - Oracolo AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="overlay" id="overlay"></div>
+  <div class="sacrificio-image" id="sacrificioImage"></div>
+  <div class="sacrificio-text" id="sacrificioText"></div>
+  <div class="popup-container" id="popupContainer"></div>
+  
+  <div class="button-container">
+    <button class="button-right" onclick="sendEmoji('❁')">❁</button>
+    <button class="button-gap-right" onclick="sendEmoji('$')">$</button>
+    <button class="button-gap-left" onclick="sendEmoji('☠︎︎')">☠︎︎</button>
+    <button class="button-left" onclick="sendEmoji('♥')">♥</button>
+  </div>
+  
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  
+  <button class="button-sacrificio" onclick="increaseProgress()">sacrificio</button>
+  
+  <div class="video-container" id="videoContainer">
+    <video id="sacrificioVideo" autoplay muted>
+      <source id="videoSource" src="File/textBurn.mp4" type="video/mp4" />
+      Il tuo browser non supporta il tag video.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
